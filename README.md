@@ -68,7 +68,7 @@ The Waveshare display/touch libraries are **not** in the Library Manager. Instal
 
 ## Configuration
 
-Open `chitti-deepseek-credits-amoled/chitti-deepseek-credits-amoled.ino` and edit these three lines near the top:
+Open `deepseek-credits-amoled/deepseek-credits-amoled.ino` and edit these three lines near the top:
 
 ```cpp
 static const char *WIFI_SSID        = "YOUR_WIFI_SSID";
@@ -128,8 +128,8 @@ Arduino **Tools** settings:
 
 ```
 .
-├── chitti-deepseek-credits-amoled/
-│   └── chitti-deepseek-credits-amoled.ino   # the sketch
+├── deepseek-credits-amoled/
+│   └── deepseek-credits-amoled.ino   # the sketch
 ├── LICENSE
 └── README.md
 ```

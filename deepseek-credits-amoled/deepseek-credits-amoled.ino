@@ -1,5 +1,5 @@
 /*
- * Chitti — DeepSeek API Credits (USD) — Waveshare ESP32-S3-Touch-AMOLED-1.8 (V1)
+ * DeepSeek API Credits (USD) — Waveshare ESP32-S3-Touch-AMOLED-1.8 (V1)
  *
  * Screen (368x448 portrait):
  *   - Header: "DeepSeek" / "API credits remaining" — centered
@@ -489,7 +489,7 @@ static void doFetchOnce() {
   http.addHeader("Accept", "application/json");
   http.addHeader("Connection", "close");
   http.addHeader("Authorization", String("Bearer ") + DEEPSEEK_API_KEY);
-  http.setUserAgent("ChittiDeepSeekAMOLED/1.2");
+  http.setUserAgent("DeepSeekCreditsAMOLED/1.2");
 
   int code = http.GET();
   String body = (code > 0) ? http.getString() : String("");
@@ -578,7 +578,7 @@ void setup() {
   USBSerial.setTxTimeoutMs(0);   // never let serial output block the UI loop
   delay(150);
   USBSerial.println();
-  USBSerial.println("Chitti — DeepSeek API credits (USD) — AMOLED 1.8 V1");
+  USBSerial.println("DeepSeek API credits (USD) — AMOLED 1.8 V1");
 
   if (!gfx->begin()) {
     USBSerial.println("ERROR: gfx->begin() failed");
