@@ -1,0 +1,12 @@
+# Arduino build output
+build/
+*.bin
+*.elf
+*.map
+*.o
+*.d
+*.eep
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
